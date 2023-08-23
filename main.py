@@ -30,7 +30,7 @@ def main():
             "Select the time between the clicks in ms (leave blank for 1000): ") or 1000)
 
         method = input(
-            "Now select the method of the click between Right Btn./Left Btn./Two Clicks ('left', 'right', 'two-clicks', leave blank = 'left'): ")
+            "Now select the method of the click between Right Btn./Left Btn./Two Clicks ('left', 'right', 'two-clicks', leave blank = 'left'): ") or 'left'
         if method not in ['right', 'left', 'two-clicks']:
             print("Error: cannot detect method")
             return
